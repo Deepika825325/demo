@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Demo page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#">Job Freak</a></div>
+                <ul class="links">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                    <li> <a href="information">Information</a></li>
+                    <li> <a href="guide">Guide</a></li>
+                </ul>
+                <a href="#" class="action_btn">Get Started</a>
+                <div class="toggle_btn">
+                  <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                 </div>
+                </div>            
+            </div>
+            <div class="dropedown_menu">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="Contact.html">Contact</a></li>
+                <li> <a href="Information">Information</a></li>
+                <li> <a href="guide">Guide</a></li>
+                <li> <a href="#" class="action_btn">Get Started</a></li> 
+            </div>
+        </header>
+        <main>
+           <section id="hero">
+            <h1>Welcome To <br>Our Website</h1>
+            <p> Get Started with Us!</p>
+           </section>
+       
+        </main>
+        
+        <script>
+            const toggleBtn =document.querySelector('.toggle_btn')
+            const toggleBtnIcon =document.querySelector('.toggle_btn i')
+            const dropeDownMenu =document.querySelector('.dropedown_menu')
+
+            toggleBtn.oneclick = function()
+            {
+            dropeDownMenu.classList.toggle('open')
+            const isOpen =dropeDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+            }
+        </script>
+        <footer>
+        <div class="footercontainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Our team</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>copyright & copy:2023;Designed by <span class="designer">Deepika</span></p>
+        </div>
+    </footer>
+    </body>
+</html>
